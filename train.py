@@ -48,11 +48,11 @@ tf.reset_default_graph()
 train_data = create_train_data()
 convnet = input_data(shape=[None, IMG_SIZE, IMG_SIZE, 3], name='input')
 convnet = conv_2d(convnet, 32, 5, activation='relu') # Convolution Layer-1 with 5 Filters of size 32*32
-convnet = max_pool_2d(convnet, 5)  # Max Pooling with block stride of 5
+convnet = max_pool_2d(convnet, 5)  # Max Pooling with filter size of 5*5
 convnet = conv_2d(convnet, 64, 5, activation='relu') # Convolution Layer-2 with 5 Filters of size 64*64
-convnet = max_pool_2d(convnet, 5)  # Max pooling with block stride of 5
+convnet = max_pool_2d(convnet, 5)  # Max pooling with filter size of 5*5
 convnet = conv_2d(convnet, 32, 5, activation='relu')  # Convolution Layer-3 with 5 Filters of size 32*32
-convnet = max_pool_2d(convnet, 5) # Max pooling with block stride of 5
+convnet = max_pool_2d(convnet, 5) # Max pooling with filter size of 5*5
 convnet = fully_connected(convnet, 1024, activation='relu') # Fully Connected Layer-4 with 1024 neurons
 convnet = dropout(convnet, 0.4) # Dropout rate set to 0.4 
 convnet = fully_connected(convnet, 2, activation='softmax')
