@@ -1,0 +1,7 @@
+cd C:\Users\praveen94\Desktop\CNN
+----TRAINING-------------
+FORMAT: python train.py <TRAINING_DIR>
+EXAMPLE: python train.py training_images
+-----TESTING-------------
+FORMAT: python train.py <TESTING_DIR>
+EXAMPLE: python train.py testing_images

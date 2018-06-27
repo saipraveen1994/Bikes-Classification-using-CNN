@@ -1,0 +1,12 @@
+-----After Training------------
+Training Step: 67  | total loss: 0.47469 | time: 0.831s
+| Adam | epoch: 017 | loss: 0.47469 - acc: 0.9615 -- iter: 192/206
+Training Step: 68  | total loss: 1.03109 | time: 1.214s
+| Adam | epoch: 017 | loss: 1.03109 - acc: 0.8976 -- iter: 206/206
+
+----After Testing--------------
+For the bike: mountain_bike_14 the model says that the image has characteristics of mountainbike with a confidence level of :  0.99124104
+For the bike: road_bike_47 the model says that the image has characteristics of roadbike with a confidence level of :  0.9997515
+For the bike: mountain_bike_23 the model says that the image has characteristics of mountainbike with a confidence level of :  0.98557276
+For the bike: road_bike_100 the model says that the image has characteristics of roadbike with a confidence level of :  0.9996803
+For the bike: road_bike_2 the model says that the image has characteristics of roadbike with a confidence level of :  0.9991605 
